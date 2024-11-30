@@ -16,11 +16,14 @@ export default function Header() {
   }
   return (
     <div className={css.div}>
-      <img className={css.logo} src="/logo_itelkom.png" alt="Itelkom logo" />
+      <NavLink to="/">
+        <img
+          className={css.logo}
+          src="logo_itelkom.png"
+          alt="Itelkom logo"
+        ></img>
+      </NavLink>
       <nav className={css.nav}>
-        <NavLink className={activeLink} to="/">
-          Главная
-        </NavLink>
         <NavLink className={activeLink} to="/register-onu">
           Регистрация ОНУ
         </NavLink>

@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import css from "./Modal_burger.module.css";
 import { showModal } from "../../redux/formData/formdataReducer";
 import { useDispatch } from "react-redux";
+import { IoMdClose } from "react-icons/io";
 export default function Modal_burger() {
   const dispatch = useDispatch();
   function handleOnClick() {
@@ -45,7 +46,7 @@ export default function Modal_burger() {
         </NavLink>
       </nav>
       <button className={css.button} type="button" onClick={handleOnClick}>
-        X
+        <IoMdClose size={30} className={css.closeIcon} />
       </button>
     </div>
   );
