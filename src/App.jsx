@@ -10,7 +10,7 @@ import Reload_Onu from "./pages/Reload_Onu/Reload_Onu";
 import Add_DHCP from "./pages/Add_DHCP/Add_DHCP";
 import Modal_burger from "./components/Modal_burger/Modal_burger";
 import { useSelector } from "react-redux";
-import { selectIsModalOpen } from "./redux/formDatas/selectors";
+import { selectIsModalOpen } from "./redux/formData/selectors";
 
 function App() {
   const isModalOpen = useSelector(selectIsModalOpen);

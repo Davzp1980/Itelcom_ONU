@@ -1,9 +1,8 @@
-/* eslint-disable react/prop-types */
 import { Field, Form, Formik } from "formik";
 import css from "./Register_ONU.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { selectFormData } from "../../redux/formDatas/selectors";
-import { registerOnu } from "../../redux/formDatas/formdataReduser";
+import { selectFormData } from "../../redux/formData/selectors";
+import { registerOnu } from "../../redux/formData/formdataReducer";
 import { Button } from "@mui/material";
 
 export default function Register_ONU() {
@@ -26,6 +25,10 @@ export default function Register_ONU() {
       })
     );
     actions.resetForm();
+  }
+
+  function handleGetFromBilling() {
+    console.log("Get from billing");
   }
   return (
     <div>
@@ -57,8 +60,22 @@ export default function Register_ONU() {
             placeholder="VLAN / Подсеть абонента"
           />
 
-          <Button className={css.button} type="submit" variant="contained">
+          <Button
+            className={css.button}
+            type="submit"
+            variant="contained"
+            color="success"
+          >
             Регистрация ONU
+          </Button>
+          <Button
+            className={css.button}
+            type="submit"
+            variant="contained"
+            color="success"
+            onClick={handleGetFromBilling}
+          >
+            Взять в биллинге
           </Button>
         </Form>
       </Formik>

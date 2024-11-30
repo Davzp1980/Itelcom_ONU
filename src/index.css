@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
   line-height: 1.5;
+  background-image: url("/background.webp");
 }
 
 h1,
@@ -11,6 +12,11 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+h2 {
+  color: rgb(0, 255, 0);
+  margin-left: 50px;
 }
 
 ul,

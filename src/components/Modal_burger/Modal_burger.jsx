@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import css from "./Modal_burger.module.css";
-import { showModal } from "../../redux/formDatas/formdataReduser";
+import { showModal } from "../../redux/formData/formdataReducer";
 import { useDispatch } from "react-redux";
 export default function Modal_burger() {
   const dispatch = useDispatch();

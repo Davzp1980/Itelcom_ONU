@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import css from "./Header.module.css";
 import clsx from "clsx";
 import { useDispatch } from "react-redux";
-import { showModal } from "../redux/formDatas/formdataReduser";
+import { showModal } from "../redux/formData/formdataReducer";
 
 export default function Header() {
   function activeLink({ isActive }) {
