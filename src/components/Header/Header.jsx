@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import css from "./Header.module.css";
 import clsx from "clsx";
 import { useDispatch } from "react-redux";
-import { showModal } from "../redux/formData/formdataReducer";
+import { showModal } from "../../redux/formData/formdataReducer";
 
 export default function Header() {
   function activeLink({ isActive }) {
@@ -15,11 +15,11 @@ export default function Header() {
     dispatch(showModal(true));
   }
   return (
-    <div className={css.div}>
+    <div className={css.headerDiv}>
       <NavLink to="/">
         <img
           className={css.logo}
-          src="logo_itelkom.png"
+          src="/logo_itelkom.png"
           alt="Itelkom logo"
         ></img>
       </NavLink>
@@ -44,7 +44,7 @@ export default function Header() {
         </NavLink>
       </nav>
       <button className={css.button} type="button" onClick={handleClick}>
-        <svg width="24" height="24">
+        <svg className={css.burgerSvg} width="24" height="24">
           <use href="/icons.svg#icon-burger"></use>
         </svg>
       </button>

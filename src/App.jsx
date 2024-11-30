@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router";
 import "./App.css";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Main from "./pages/Main/Main";
 import Register_ONU from "./pages/Register_ONU/Register_ONU";
 import Register_Onu_Switch from "./pages/Register_Onu_Switch/Register_Onu_Switch";

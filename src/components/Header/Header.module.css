@@ -1,4 +1,4 @@
-.div {
+.headerDiv {
   margin: 0 auto;
   padding: 20px 20px;
   max-width: 1300px;
@@ -15,6 +15,10 @@
 
 .logo {
   background-color: transparent;
+}
+
+.burgerSvg {
+  fill: rgb(167, 34, 34);
 }
 
 .link {
@@ -42,7 +46,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .div {
+  .headerDiv {
     justify-content: space-between;
   }
   .nav {

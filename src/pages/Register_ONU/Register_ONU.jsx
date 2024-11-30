@@ -24,6 +24,7 @@ export default function Register_ONU() {
         vlan: values.vlan,
       })
     );
+
     actions.resetForm();
   }
 
