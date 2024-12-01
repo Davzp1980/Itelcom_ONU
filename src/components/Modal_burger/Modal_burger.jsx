@@ -11,8 +11,8 @@ export default function Modal_burger() {
   return (
     <div className={css.div}>
       <nav className={css.nav}>
-        <NavLink className={css.link} to="/" onClick={handleOnClick}>
-          Главная
+        <NavLink className={css.link} to="/add-dhcp" onClick={handleOnClick}>
+          Добавить DHCP
         </NavLink>
         <NavLink
           className={css.link}
@@ -40,9 +40,6 @@ export default function Modal_burger() {
         </NavLink>
         <NavLink className={css.link} to="/reload-onu" onClick={handleOnClick}>
           Перезагрузка ОНУ
-        </NavLink>
-        <NavLink className={css.link} to="/add-dhcp" onClick={handleOnClick}>
-          Добавить DHCP
         </NavLink>
       </nav>
       <button className={css.button} type="button" onClick={handleOnClick}>
