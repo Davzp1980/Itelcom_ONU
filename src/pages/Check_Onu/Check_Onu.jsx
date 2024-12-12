@@ -47,20 +47,11 @@ export default function Check_Onu() {
             name="number_onu"
             placeholder="Номер ОНУ"
           />
-          <Button
-            className={css.button}
-            type="submit"
-            variant="contained"
-            color="success"
-          >
+          <button className={css.button} type="submit">
             Проверить чЁ тама
-          </Button>
+          </button>
         </Form>
       </Formik>
-
-      <p>ip_bdcom: {formData.ip_bdcom}</p>
-      <p>port: {formData.port}</p>
-      <p>number_onu: {formData.number_onu}</p>
     </div>
   );
 }

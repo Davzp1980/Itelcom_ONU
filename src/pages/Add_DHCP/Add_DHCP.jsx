@@ -32,7 +32,7 @@ export default function Add_DHCP() {
   }
   return (
     <div>
-      <h2>Регистрация ОНУ:</h2>
+      <h2>Добавить DHCP:</h2>
       <Formik initialValues={initialValues} onSubmit={handleSubmit}>
         <Form className={css.form}>
           <Field
@@ -60,30 +60,16 @@ export default function Add_DHCP() {
             placeholder="XX:XX:XX:XX:XX:XX"
           />
 
-          <Button
-            className={css.button}
-            type="submit"
-            variant="contained"
-            color="success"
-          >
-            Взять в биллинге
-          </Button>
-          <Button
-            className={css.button}
-            type="submit"
-            variant="contained"
-            color="success"
-            onClick={handleGetFromBilling}
-          >
-            Регистрация
-          </Button>
+          <div className={css.buttonDiv}>
+            <button className={css.button} type="submit">
+              Взять в биллинге
+            </button>
+            <button className={css.button} onClick={handleGetFromBilling}>
+              Регистрация
+            </button>
+          </div>
         </Form>
       </Formik>
-
-      <p>login: {formData.login}</p>
-      <p>ip_bdcom: {formData.ip_bdcom}</p>
-      <p>num_onu: {formData.num_onu}</p>
-      <p>vlan: {formData.vlan}</p>
     </div>
   );
 }

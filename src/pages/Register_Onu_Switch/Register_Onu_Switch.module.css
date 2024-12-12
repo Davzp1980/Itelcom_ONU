@@ -4,11 +4,12 @@
   gap: 10px;
   max-width: 400px;
   margin-top: 20px;
-  margin-left: 50px;
+
   border-radius: 15px;
+  margin: 0 auto;
   padding: 20px;
-  box-shadow: 10px 5px 5px gray;
-  background-color: aqua;
+
+  background-color: inherit;
 }
 
 .field {
@@ -16,12 +17,23 @@
   font-size: 20px;
   padding-left: 10px;
   border-radius: 5px;
-  border-color: aqua;
 }
 
 .button {
+  width: 150px;
+  font-family: "Roboto", sans-serif;
   margin-top: 20px;
-  width: 180px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: rgb(160, 245, 233);
+  border: none;
+}
+
+.button:hover {
+  background-color: rgb(160, 245, 233, 0.5);
 }
 
 @media screen and (max-width: 768px) {

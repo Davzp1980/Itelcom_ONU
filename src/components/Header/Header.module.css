@@ -25,14 +25,14 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  background-color: rgb(47, 212, 190);
+  background-color: rgb(160, 245, 233);
   padding: 10px;
   border-radius: 10px;
   text-align: center;
 }
 
 .link:hover {
-  background-color: rgb(156, 253, 240);
+  background-color: rgb(119, 243, 226);
 }
 
 .button {
@@ -42,7 +42,7 @@
 }
 
 .active {
-  background-color: rgb(0, 162, 255);
+  background-color: rgb(58, 131, 173);
 }
 
 @media screen and (max-width: 768px) {
